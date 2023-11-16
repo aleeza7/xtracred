@@ -98,25 +98,54 @@ if(grade4=="F") {
 function fifthGrade () { 
     document.getElementById("fifth").focus();
 grade5 = document.getElementById("fifth").value; 
-if(grade5=="A") {document.getElementById("message5").innerHTML = "Your GPA based on this grade1 grade = 4.0"; value5=4; }
-if(grade5=="B") {document.getElementById("message5").innerHTML = "Your GPA based on this grade1 grade = 3.0"; value5=3; }
-if(grade5=="C") {document.getElementById("message5").innerHTML = "Your GPA based on this grade1 grade = 2.0"; value5=2; }
-if(grade5=="D") {document.getElementById("message5").innerHTML = "Your GPA based on this grade1 grade = 1.0"; value5=1; }
-if(grade5=="F") {document.getElementById("message5").innerHTML = "Your GPA based on this grade1 grade = 0.0"; value5=0;}}
+if(grade5=="A") {
+    value5=4; 
+}
+if(grade5=="B") {
+    value5=3;
+}
+if(grade5=="C") {
+    value5=2;
+}
+if(grade5=="D") {
+    value5=1;
+}
+if(grade5=="F") {
+    value5=0;}
+}
 
 function average () {  
 document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5; 
 GPA = (value1+value2+value3+value4+value5)/5;
-if(GPA>=3.7) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + ".0 | That's an A! Congrats, you're on the High Honor Roll!"; } 
-if(GPA<3.7 && GPA>=3.5) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's an A-! Congrats, you're on the Honor Roll!"; }
-if(GPA<3.5 && GPA>=3.3) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a B+!";} 
-if(GPA<3.3 && GPA>=2.7) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a B!";}
-if(GPA<2.7 && GPA>=2.5){document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a B-!";} 
-if(GPA<2.5 && GPA>=2.3){document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a C+!";} 
-if(GPA<2.3 && GPA>=1.7){document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a C!";}
-if(GPA<1.7 && GPA>=1.5) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a C-!";} 
-if(GPA<1.5 && GPA>=1) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + " | That's a D!";}
-if(GPA<1) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + ".0 | That's an F! Unfortunately, you're on Academic Probation...";}}
+if(GPA>=3.7) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "A"; 
+             } 
+if(GPA<3.7 && GPA>=3.5) {
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "A-"; 
+                        }
+if(GPA<3.5 && GPA>=3.3) {document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "B+";
+                        } 
+if(GPA<3.3 && GPA>=2.7) {
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "B";
+                        }
+if(GPA<2.7 && GPA>=2.5){
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "B-";
+                       } 
+if(GPA<2.5 && GPA>=2.3){
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "C+";
+                       } 
+if(GPA<2.3 && GPA>=1.7){
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "C";
+                       }
+if(GPA<1.7 && GPA>=1.5) {
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "C-";
+                        } 
+if(GPA<1.5 && GPA>=1) {
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "D";
+                      }
+if(GPA<1) {
+    document.getElementById("calculate").innerHTML = (value1+value2+value3+value4+value5)/5 + "F";
+          }
+}
 
 function resetCalculator () { 
     document.getElementById("first").value = "";
